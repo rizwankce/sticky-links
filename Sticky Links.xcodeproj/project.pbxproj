@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18FA0757270DED8100AEC7D8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FA0756270DED8100AEC7D8 /* Colors.swift */; };
+		658A02EB270EC9BC00DBA951 /* Sticky_LinksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658A02EA270EC9BC00DBA951 /* Sticky_LinksTests.swift */; };
 		B26DCA1C27062C0A0088032C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B26DCA1B27062C0A0088032C /* README.md */; };
 		B290640827040F81004250FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290640727040F81004250FA /* AppDelegate.swift */; };
 		B290640A27040F81004250FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290640927040F81004250FA /* SceneDelegate.swift */; };
@@ -20,8 +21,20 @@
 		B290642727041685004250FA /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B290642627041685004250FA /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		658A02EC270EC9BC00DBA951 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B29063FC27040F80004250FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B290640327040F81004250FA;
+			remoteInfo = "Sticky Links";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		18FA0756270DED8100AEC7D8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		658A02E8270EC9BC00DBA951 /* Sticky LinksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sticky LinksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		658A02EA270EC9BC00DBA951 /* Sticky_LinksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticky_LinksTests.swift; sourceTree = "<group>"; };
 		B26DCA1B27062C0A0088032C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B290640427040F81004250FA /* Sticky Links.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sticky Links.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B290640727040F81004250FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		658A02E5270EC9BC00DBA951 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B290640127040F81004250FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,11 +67,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		658A02E9270EC9BC00DBA951 /* Sticky LinksTests */ = {
+			isa = PBXGroup;
+			children = (
+				658A02EA270EC9BC00DBA951 /* Sticky_LinksTests.swift */,
+			);
+			path = "Sticky LinksTests";
+			sourceTree = "<group>";
+		};
 		B29063FB27040F80004250FA = {
 			isa = PBXGroup;
 			children = (
 				B26DCA1B27062C0A0088032C /* README.md */,
 				B290640627040F81004250FA /* Sticky Links */,
+				658A02E9270EC9BC00DBA951 /* Sticky LinksTests */,
 				B290640527040F81004250FA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				B290640427040F81004250FA /* Sticky Links.app */,
+				658A02E8270EC9BC00DBA951 /* Sticky LinksTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +139,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		658A02E7270EC9BC00DBA951 /* Sticky LinksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 658A02F0270EC9BC00DBA951 /* Build configuration list for PBXNativeTarget "Sticky LinksTests" */;
+			buildPhases = (
+				658A02E4270EC9BC00DBA951 /* Sources */,
+				658A02E5270EC9BC00DBA951 /* Frameworks */,
+				658A02E6270EC9BC00DBA951 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				658A02ED270EC9BC00DBA951 /* PBXTargetDependency */,
+			);
+			name = "Sticky LinksTests";
+			productName = "Sticky LinksTests";
+			productReference = 658A02E8270EC9BC00DBA951 /* Sticky LinksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B290640327040F81004250FA /* Sticky Links */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B290641B27040F85004250FA /* Build configuration list for PBXNativeTarget "Sticky Links" */;
@@ -136,6 +184,10 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					658A02E7270EC9BC00DBA951 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = B290640327040F81004250FA;
+					};
 					B290640327040F81004250FA = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -155,11 +207,19 @@
 			projectRoot = "";
 			targets = (
 				B290640327040F81004250FA /* Sticky Links */,
+				658A02E7270EC9BC00DBA951 /* Sticky LinksTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		658A02E6270EC9BC00DBA951 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B290640227040F81004250FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -174,6 +234,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		658A02E4270EC9BC00DBA951 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658A02EB270EC9BC00DBA951 /* Sticky_LinksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B290640027040F81004250FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +257,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		658A02ED270EC9BC00DBA951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B290640327040F81004250FA /* Sticky Links */;
+			targetProxy = 658A02EC270EC9BC00DBA951 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B290640D27040F81004250FA /* Main.storyboard */ = {
@@ -210,6 +286,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		658A02EE270EC9BC00DBA951 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stickylinks.Sticky-LinksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sticky Links.app/Sticky Links";
+			};
+			name = Debug;
+		};
+		658A02EF270EC9BC00DBA951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stickylinks.Sticky-LinksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sticky Links.app/Sticky Links";
+			};
+			name = Release;
+		};
 		B290641927040F85004250FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -385,6 +505,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		658A02F0270EC9BC00DBA951 /* Build configuration list for PBXNativeTarget "Sticky LinksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				658A02EE270EC9BC00DBA951 /* Debug */,
+				658A02EF270EC9BC00DBA951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B29063FF27040F80004250FA /* Build configuration list for PBXProject "Sticky Links" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
