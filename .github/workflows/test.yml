@@ -18,4 +18,6 @@ jobs:
         SCHEME: Sticky Links
         DESTINATION: platform=iOS Simulator,OS=14.0,name=iPhone 12
       run: |
+        ls /Applications
+        xcodebuild -scheme ${SCHEME} -showdestinations
         xcodebuild -project "$PROJECT" -scheme "$SCHEME" -destination "$DESTINATION" -configuration Release clean test CODE_SIGNING_ALLOWED=NO | xcpretty
