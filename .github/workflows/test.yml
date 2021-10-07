@@ -1,0 +1,21 @@
+name: Swift
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build & Test
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build & Test
+      env: 
+        PROJECT: Sticky Links.xcodeproj
+        SCHEME: Sticky Links
+        DESTINATION: platform=iOS Simulator,OS=15.0,name=iPhone 13
+      run: |
+        xcodebuild -project "$PROJECT" -scheme "$SCHEME" -destination "$DESTINATION" -configuration Release clean test CODE_SIGNING_ALLOWED=NO | xcpretty
